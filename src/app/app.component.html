@@ -1,0 +1,137 @@
+<div class="super-container z-50 w-screen h-screen relative bg-slate-100 dark:bg-black">
+    <!-- ENTETE -->
+    <header class="dark:bg-black dark:text-white">
+        <nav class="flex items-center gap-8 w-full max-w-5xl mx-auto p-2 bg-white dark:bg-black">
+            <div class="cursor-pointer text-xl">
+                <svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="18px" viewBox="0 0 512 512"
+                  xml:space="preserve">
+                  <g id="7935ec95c421cee6d86eb22ecd114eed">
+                    <path style="display: inline;" d="M248.644,123.476c-5.45-29.71,8.598-60.285,25.516-80.89
+                        c18.645-22.735,50.642-40.17,77.986-42.086c4.619,31.149-8.093,61.498-24.826,82.965
+                        C309.37,106.527,278.508,124.411,248.644,123.476z M409.034,231.131c8.461-23.606,25.223-44.845,51.227-59.175
+                        c-26.278-32.792-63.173-51.83-97.99-51.83c-46.065,0-65.542,21.947-97.538,21.947c-32.96,0-57.965-21.947-97.866-21.947
+                        c-39.127,0-80.776,23.848-107.19,64.577c-9.712,15.055-16.291,33.758-19.879,54.59c-9.956,58.439,4.916,134.557,49.279,202.144
+                        c21.57,32.796,50.321,69.737,87.881,70.059c33.459,0.327,42.951-21.392,88.246-21.616c45.362-0.258,53.959,21.841,87.372,21.522
+                        c37.571-0.317,67.906-41.199,89.476-73.991c15.359-23.532,21.167-35.418,33.11-62.023
+                        C414.435,352.487,389.459,285.571,409.034,231.131z">
+                    </path>
+                  </g>
+                </svg>
+            </div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">Store</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">Mac</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">iPad</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">iPhone</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">Watch</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">Vision</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">AirPods</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white whitespace-nowrap">TV & Home</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">Entertainment</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">Accessories</div>
+            <div class="cursor-pointer text-xl text_nav dark:text-white">Support</div>
+            <div class="cursor-pointer text-xl ml-auto" dark:text-white>
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="cursor-pointer text-xl">
+                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.2236 12.5257C19.6384 9.40452 19.3458 7.84393 18.2349 6.92196C17.124 6 15.5362 6 12.3606 6H11.6394C8.46386 6 6.87608 6 5.76518 6.92196C4.65428 7.84393 4.36167 9.40452 3.77645 12.5257C2.95353 16.9146 2.54207 19.1091 3.74169 20.5545C4.94131 22 7.17402 22 11.6394 22H12.3606C16.826 22 19.0587 22 20.2584 20.5545C20.9543 19.7159 21.108 18.6252 20.9537 17" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                    <path d="M9 6V5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5V6" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </nav>
+        <!-- Section en bas de l'entête -->
+        <div class="border-b flex items-center justify-between w-full max-w-5xl mx-auto p-2">
+            <div class="font-semibold text-xl">AirPods Max</div>
+            <div class="flex items-center gap-6">
+                <div class="opacity-50 cursor-pointer">Overviews</div>
+                <div class="cursor-pointer ">compare</div>
+                <div class="cursor-pointer parentToggle flex items-center gap-3 p-1 relative bg-slate-400">
+                    <div class="light z-10">
+                        <svg (click)="light()" width="22" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14.4865 6.58803C14.8113 6.33092 14.8661 5.85922 14.609 5.53447C14.3519 5.20971 13.8802 5.15486 13.5555 5.41197L14.4865 6.58803ZM11.5345 7.01197C11.2097 7.26908 11.1549 7.74078 11.412 8.06553C11.6691 8.39029 12.1408 8.44514 12.4655 8.18803L11.5345 7.01197ZM11.5345 8.18803C11.8592 8.44514 12.3309 8.39029 12.588 8.06553C12.8451 7.74078 12.7903 7.26908 12.4655 7.01197L11.5345 8.18803ZM10.4445 5.41197C10.1198 5.15486 9.64808 5.20971 9.39097 5.53447C9.13386 5.85922 9.18871 6.33092 9.51347 6.58803L10.4445 5.41197ZM11.25 7.6C11.25 8.01421 11.5858 8.35 12 8.35C12.4142 8.35 12.75 8.01421 12.75 7.6H11.25ZM12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4H12.75ZM12.75 7.6C12.75 7.18579 12.4142 6.85 12 6.85C11.5858 6.85 11.25 7.18579 11.25 7.6H12.75ZM11.25 16.4C11.25 16.8142 11.5858 17.15 12 17.15C12.4142 17.15 12.75 16.8142 12.75 16.4H11.25ZM9.51347 17.412C9.18871 17.6691 9.13386 18.1408 9.39097 18.4655C9.64808 18.7903 10.1198 18.8451 10.4445 18.588L9.51347 17.412ZM12.4655 16.988C12.7903 16.7309 12.8451 16.2592 12.588 15.9345C12.3309 15.6097 11.8592 15.5549 11.5345 15.812L12.4655 16.988ZM12.4655 15.812C12.1408 15.5549 11.6691 15.6097 11.412 15.9345C11.1549 16.2592 11.2097 16.7309 11.5345 16.988L12.4655 15.812ZM13.5555 18.588C13.8802 18.8451 14.3519 18.7903 14.609 18.4655C14.8661 18.1408 14.8113 17.6691 14.4865 17.412L13.5555 18.588ZM12.75 16.4C12.75 15.9858 12.4142 15.65 12 15.65C11.5858 15.65 11.25 15.9858 11.25 16.4H12.75ZM11.25 20C11.25 20.4142 11.5858 20.75 12 20.75C12.4142 20.75 12.75 20.4142 12.75 20H11.25ZM6.01052 12.5685C5.62419 12.4191 5.18989 12.6112 5.04049 12.9975C4.89108 13.3838 5.08315 13.8181 5.46948 13.9675L6.01052 12.5685ZM7.87948 14.8995C8.26581 15.0489 8.70011 14.8568 8.84951 14.4705C8.99892 14.0842 8.80685 13.6499 8.42052 13.5005L7.87948 14.8995ZM8.89126 14.3142C8.95432 13.9048 8.67356 13.5218 8.26417 13.4587C7.85479 13.3957 7.4718 13.6764 7.40874 14.0858L8.89126 14.3142ZM7.01874 16.6178C6.95568 17.0272 7.23644 17.4102 7.64583 17.4733C8.05521 17.5363 8.4382 17.2556 8.50126 16.8462L7.01874 16.6178ZM8.5221 14.8512C8.88174 14.6457 9.00669 14.1875 8.80118 13.8279C8.59567 13.4683 8.13753 13.3433 7.7779 13.5488L8.5221 14.8512ZM4.6279 15.3488C4.26826 15.5543 4.14331 16.0125 4.34882 16.3721C4.55433 16.7317 5.01247 16.8567 5.3721 16.6512L4.6279 15.3488ZM7.7779 13.5488C7.41826 13.7543 7.29331 14.2125 7.49882 14.5721C7.70433 14.9317 8.16247 15.0567 8.5221 14.8512L7.7779 13.5488ZM16.2221 10.4512C16.5817 10.2457 16.7067 9.78753 16.5012 9.4279C16.2957 9.06826 15.8375 8.94331 15.4779 9.14882L16.2221 10.4512ZM17.9895 11.4315C18.3758 11.5809 18.8101 11.3888 18.9595 11.0025C19.1089 10.6162 18.9168 10.1819 18.5305 10.0325L17.9895 11.4315ZM16.1205 9.10049C15.7342 8.95108 15.2999 9.14315 15.1505 9.52948C15.0011 9.91581 15.1932 10.3501 15.5795 10.4995L16.1205 9.10049ZM15.1087 9.68582C15.0457 10.0952 15.3264 10.4782 15.7358 10.5413C16.1452 10.6043 16.5282 10.3236 16.5913 9.91418L15.1087 9.68582ZM16.9813 7.38217C17.0443 6.97279 16.7636 6.5898 16.3542 6.52674C15.9448 6.46368 15.5618 6.74444 15.4987 7.15383L16.9813 7.38217ZM15.4779 9.14882C15.1183 9.35432 14.9933 9.81247 15.1988 10.1721C15.4043 10.5317 15.8625 10.6567 16.2221 10.4512L15.4779 9.14882ZM19.3721 8.65118C19.7317 8.44567 19.8567 7.98753 19.6512 7.6279C19.4457 7.26826 18.9875 7.14331 18.6279 7.34882L19.3721 8.65118ZM5.46948 10.0325C5.08315 10.1819 4.89108 10.6162 5.04049 11.0025C5.18989 11.3888 5.62419 11.5809 6.01052 11.4315L5.46948 10.0325ZM8.42052 10.4995C8.80685 10.3501 8.99892 9.91581 8.84951 9.52948C8.70011 9.14315 8.26581 8.95108 7.87948 9.10049L8.42052 10.4995ZM7.40874 9.91418C7.4718 10.3236 7.85479 10.6043 8.26417 10.5413C8.67356 10.4782 8.95432 10.0952 8.89126 9.68582L7.40874 9.91418ZM8.50126 7.15383C8.4382 6.74444 8.05521 6.46368 7.64583 6.52674C7.23644 6.5898 6.95568 6.97279 7.01874 7.38217L8.50126 7.15383ZM7.7779 10.4512C8.13753 10.6567 8.59567 10.5317 8.80118 10.1721C9.00669 9.81247 8.88174 9.35432 8.5221 9.14882L7.7779 10.4512ZM5.3721 7.34882C5.01247 7.14331 4.55433 7.26826 4.34882 7.6279C4.14331 7.98753 4.26826 8.44567 4.6279 8.65118L5.3721 7.34882ZM8.5221 9.14882C8.16247 8.94331 7.70433 9.06826 7.49882 9.4279C7.29331 9.78753 7.41826 10.2457 7.7779 10.4512L8.5221 9.14882ZM15.4779 14.8512C15.8375 15.0567 16.2957 14.9317 16.5012 14.5721C16.7067 14.2125 16.5817 13.7543 16.2221 13.5488L15.4779 14.8512ZM18.5305 13.9675C18.9168 13.8181 19.1089 13.3838 18.9595 12.9975C18.8101 12.6112 18.3758 12.4191 17.9895 12.5685L18.5305 13.9675ZM15.5795 13.5005C15.1932 13.6499 15.0011 14.0842 15.1505 14.4705C15.2999 14.8568 15.7342 15.0489 16.1205 14.8995L15.5795 13.5005ZM16.5913 14.0858C16.5282 13.6764 16.1452 13.3957 15.7358 13.4587C15.3264 13.5218 15.0457 13.9048 15.1087 14.3142L16.5913 14.0858ZM15.4987 16.8462C15.5618 17.2556 15.9448 17.5363 16.3542 17.4733C16.7636 17.4102 17.0443 17.0272 16.9813 16.6178L15.4987 16.8462ZM16.2221 13.5488C15.8625 13.3433 15.4043 13.4683 15.1988 13.8279C14.9933 14.1875 15.1183 14.6457 15.4779 14.8512L16.2221 13.5488ZM18.6279 16.6512C18.9875 16.8567 19.4457 16.7317 19.6512 16.3721C19.8567 16.0125 19.7317 15.5543 19.3721 15.3488L18.6279 16.6512ZM13.5555 5.41197L11.5345 7.01197L12.4655 8.18803L14.4865 6.58803L13.5555 5.41197ZM12.4655 7.01197L10.4445 5.41197L9.51347 6.58803L11.5345 8.18803L12.4655 7.01197ZM12.75 7.6V4H11.25V7.6H12.75ZM11.25 7.6V16.4H12.75V7.6H11.25ZM10.4445 18.588L12.4655 16.988L11.5345 15.812L9.51347 17.412L10.4445 18.588ZM11.5345 16.988L13.5555 18.588L14.4865 17.412L12.4655 15.812L11.5345 16.988ZM11.25 16.4V20H12.75V16.4H11.25ZM5.46948 13.9675L7.87948 14.8995L8.42052 13.5005L6.01052 12.5685L5.46948 13.9675ZM7.40874 14.0858L7.01874 16.6178L8.50126 16.8462L8.89126 14.3142L7.40874 14.0858ZM7.7779 13.5488L4.6279 15.3488L5.3721 16.6512L8.5221 14.8512L7.7779 13.5488ZM8.5221 14.8512L16.2221 10.4512L15.4779 9.14882L7.7779 13.5488L8.5221 14.8512ZM18.5305 10.0325L16.1205 9.10049L15.5795 10.4995L17.9895 11.4315L18.5305 10.0325ZM16.5913 9.91418L16.9813 7.38217L15.4987 7.15383L15.1087 9.68582L16.5913 9.91418ZM16.2221 10.4512L19.3721 8.65118L18.6279 7.34882L15.4779 9.14882L16.2221 10.4512ZM6.01052 11.4315L8.42052 10.4995L7.87948 9.10049L5.46948 10.0325L6.01052 11.4315ZM8.89126 9.68582L8.50126 7.15383L7.01874 7.38217L7.40874 9.91418L8.89126 9.68582ZM8.5221 9.14882L5.3721 7.34882L4.6279 8.65118L7.7779 10.4512L8.5221 9.14882ZM7.7779 10.4512L15.4779 14.8512L16.2221 13.5488L8.5221 9.14882L7.7779 10.4512ZM17.9895 12.5685L15.5795 13.5005L16.1205 14.8995L18.5305 13.9675L17.9895 12.5685ZM15.1087 14.3142L15.4987 16.8462L16.9813 16.6178L16.5913 14.0858L15.1087 14.3142ZM15.4779 14.8512L18.6279 16.6512L19.3721 15.3488L16.2221 13.5488L15.4779 14.8512Z" fill="#fff"/>
+                        </svg>
+                    </div>
+                    <div class="dark z-10">
+                        <svg (click)="dark()" width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="overlay_toggle bg-blue-700"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- La section suivante contient tout le contenu principale de l'animation deux block l'un pour faire roter les img et l'autre pour la galeri de airPods -->
+    <section class="body grid grid-cols-2 mt-10 grid-rows-1 h-full bg-transparent dark:bg-transparent rounded-lg mb-4 max-w-5xl mx-auto">
+        <!-- Zone contenant la partie rotatifs des AirPods qui n'ai essentiellment qu'une div en cercle en position relative et j'ai place les img en absolu par rapport au rendu et quand -->
+        <!-- on click je fais simplement roter le parent et les enfants suivent le pas -->
+        <div class="body_left relative col-span-1">
+            <div class="circle_left">
+                <img class="circle_left_img circle_left_img1 opacity-0" src="../../../assets/front_2.png" alt="">
+                <img (click)="init()" class="circle_left_img circle_left_img2 cursor-pointer" src="../../../assets/front_1.png" alt="">
+                <img class="circle_left_img circle_left_img3 opacity-0" src="../../../assets/back_3.png" alt="">
+            </div>
+        </div>
+        <!-- Contenu contenant la pallete des AirPods -->
+        <div class="body_right px-2 bg-transparent translate-x-96 opacity-0 py-3 h-full dark:bg-blackgray dark:text-white rounded-lg">
+            <p class="text-orange-500 text-xl">Gravure Gratuite</p>
+            <div class="text-4xl font-bold">AirPods Max</div>
+            <div class="text-4xl font-bold mb-2">Siren 2019</div>
+            <div class="body_right_block--text opacity-0 rounded-lg bg-white p-2 dark:bg-black dark:text-white">
+                <div class="text-xl">620,00$</div>
+                <p class="mb-1">Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                <p class="mt-1">Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="body_right_block--galery z-100 relative grid grid-cols-3 gap-2 mt-2 grid-rows-1 translate-x-96 opacity-0">
+                <div class="parentImg bg-white dark:bg-black">
+                    <img (click)="first()" class="img1 img" src="../../../assets/back_1.png" alt="">
+                    <div class="overlayColor overlayColor1"></div>
+                    <div class="overlayText">Gray</div>
+                </div>
+                <div class="parentImg bg-white dark:bg-black">
+                    <img (click)="second()" class="img2 img" src="../../../assets/back_2.png" alt="">
+                    <div class="overlayColor overlayColor2"></div>
+                    <div class="overlayText">Rose</div>
+                </div>
+                <div class="parentImg bg-white dark:bg-black">
+                    <img (click)="third()" class="img3 img" src="../../../assets/front_3.png" alt="">
+                    <div class="overlayColor overlayColor3"></div>
+                    <div class="overlayText">Black</div>
+                </div>
+                <div class="line_overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cette zone contient uniquement le bouton visible en bas de la page en position absolute -->
+    <div class="overlay_button flex items-center">
+        <div (click)="precedent()" class="suivant inline-flex items-center cursor-pointer bg-blue-600 text-white px-3 py-2">
+            <div class="p-1 rounded-full bg-gray-400 cursor-pointer">
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z" fill="#fff"/>
+                </svg>
+            </div>
+        </div>
+        <div (click)="suivant()" class="precedent inline-flex items-center cursor-pointer gap-2 bg-blue-600 text-white px-3 py-2">
+            <span class="suivant_text">Suivant</span>
+            <span class="precedent_text">Precedent</span>
+            <div class="p-1 rounded-full bg-gray-400 arrow_right">
+                <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.71069 18.2929C10.1012 18.6834 10.7344 18.6834 11.1249 18.2929L16.0123 13.4006C16.7927 12.6195 16.7924 11.3537 16.0117 10.5729L11.1213 5.68254C10.7308 5.29202 10.0976 5.29202 9.70708 5.68254C9.31655 6.07307 9.31655 6.70623 9.70708 7.09676L13.8927 11.2824C14.2833 11.6729 14.2833 12.3061 13.8927 12.6966L9.71069 16.8787C9.32016 17.2692 9.32016 17.9023 9.71069 18.2929Z" fill="#fff"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!-- Le mot Airpods Visible à l'arriere  -->
+    <div class="bg dark:text-white">
+        AirPods Max
+    </div>
+    <!-- Debut zone contetant les deux autres img AirPods non centrer (en position absolute) l'ors de l'ouverture  -->
+    <img class="img_overlay1" src="../../../assets/back_3.png" alt="">
+    <img class="img_overlay2" src="../../../assets/front_2.png" alt="">
+</div>
